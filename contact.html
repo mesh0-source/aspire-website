@@ -28,6 +28,28 @@
     font-family:'Montserrat'; font-weight:700; font-size:13px; display:flex; align-items:center; justify-content:center;
   }
   .steps-list li strong{ color:var(--navy); display:block; font-size:16px; margin-bottom:2px; }
+
+  .start-project{
+    background:var(--navy); border-bottom:3px solid var(--gold);
+    padding:56px 0;
+  }
+  .start-project .section-label{ color:var(--gold-light); }
+  .start-project h2{ color:#fff; font-size:clamp(22px,2.8vw,28px); margin:0 0 12px; font-weight:800; }
+  .start-project p.intro{ color:#B7C0CC; font-size:15.5px; line-height:1.65; max-width:640px; margin:0 0 30px; }
+  .start-options{ display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+  @media (max-width:760px){ .start-options{ grid-template-columns:1fr; } }
+  .start-option{
+    background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.16);
+    padding:26px 24px; display:flex; flex-direction:column;
+  }
+  .start-option.primary{ border-color:var(--gold); background:rgba(217,189,139,.08); }
+  .start-option .step-tag{
+    font-family:'Montserrat'; font-weight:700; font-size:11px; letter-spacing:1.2px; text-transform:uppercase;
+    color:var(--gold-light); margin:0 0 8px;
+  }
+  .start-option h3{ color:#fff; font-size:18px; margin:0 0 8px; font-weight:700; }
+  .start-option p{ color:#B7C0CC; font-size:14px; line-height:1.6; margin:0 0 20px; flex:1; }
+  .start-option .btn{ align-self:flex-start; }
 </style>
 </head>
 <body>
@@ -62,13 +84,35 @@
     </div>
   </section>
 
+  <section class="start-project">
+    <div class="wrap">
+      <p class="section-label">Start a Project</p>
+      <h2>Tell us about your organization's needs.</h2>
+      <p class="intro">Complete our Client Intake Form so we understand your organization, project, timeline, and budget before we talk — or reach out by email first if you'd rather ask a question before diving in.</p>
+      <div class="start-options">
+        <div class="start-option primary">
+          <p class="step-tag">Recommended</p>
+          <h3>Complete Client Intake Form</h3>
+          <p>Share your organization's mission, the service you need, project details, timeline, budget, and materials — it takes about 10&ndash;15 minutes and lets us prepare before we respond.</p>
+          <a class="btn btn-gold" href="assets/docs/Aspire_Client_Intake_Form.docx">Complete Client Intake Form</a>
+        </div>
+        <div class="start-option">
+          <p class="step-tag">Prefer to say hello first?</p>
+          <h3>Email Aspire</h3>
+          <p>Not ready for the full form, or have a quick question about fit, scope, or pricing? Send a short email and we'll follow up within two business days.</p>
+          <a class="btn btn-outline-light" href="mailto:contact@aspireresearchconsulting.com?subject=Project%20Inquiry%20-%20Aspire%20Research%20%26%20Consulting">Email Aspire</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="bordered">
     <div class="wrap contact-grid">
       <div>
         <p class="section-label">What Happens Next</p>
         <h2 class="section-title">A simple, three-step start</h2>
         <ol class="steps-list">
-          <li><strong>Send an inquiry</strong>Email us a short description of your organization and project — or just say hello and we'll ask the right questions.</li>
+          <li><strong>Send an inquiry</strong>Complete the Client Intake Form (or send a short email) describing your organization and project — we'll ask the right questions if anything's missing.</li>
           <li><strong>Discovery &amp; proposal</strong>We'll confirm scope, timeline, and investment, and send a written Client Proposal and Service Agreement.</li>
           <li><strong>Kickoff</strong>Once the deposit and signed agreement are in, we begin — with regular check-ins through delivery.</li>
         </ol>
@@ -81,7 +125,7 @@
         <p class="value">Within 2 business days</p>
         <p class="label">Best For</p>
         <p class="value" style="font-weight:400; font-size:15px; color:var(--mid);">Nonprofits, NGOs, research organizations, and mission-driven organizations seeking research, grant development, or technical documentation support.</p>
-        <a class="btn btn-primary" style="width:100%; margin-top:6px;" href="mailto:contact@aspireresearchconsulting.com?subject=Project%20Inquiry%20-%20Aspire%20Research%20%26%20Consulting">Email Aspire</a>
+        <a class="btn btn-primary" style="width:100%; margin-top:6px;" href="assets/docs/Aspire_Client_Intake_Form.docx">Complete Client Intake Form</a>
       </div>
     </div>
   </section>
