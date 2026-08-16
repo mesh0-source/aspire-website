@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Aspire Research &amp; Consulting</title>
+<meta name="description" content="Get in touch with Aspire Research & Consulting to discuss a grant proposal, funder research, research report, or program documentation project.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+<style>
+  .contact-grid{ display:grid; grid-template-columns:1.1fr 0.9fr; gap:48px; align-items:start; }
+  @media (max-width:900px){ .contact-grid{ grid-template-columns:1fr; } }
+  .contact-card{
+    background:var(--cream); border:1px solid var(--hairline); border-top:4px solid var(--gold);
+    padding:32px;
+  }
+  .contact-card .label{ font-family:'Montserrat'; font-weight:700; font-size:11px; letter-spacing:1.4px; text-transform:uppercase; color:var(--gold); margin:0 0 6px; }
+  .contact-card .value{ font-size:17px; color:var(--navy); font-weight:600; margin:0 0 22px; }
+  .contact-card .value:last-child{ margin-bottom:0; }
+  .steps-list{ counter-reset:step; list-style:none; margin:0; padding:0; }
+  .steps-list li{
+    counter-increment:step; position:relative; padding:0 0 26px 42px; font-size:15.5px; color:var(--mid); line-height:1.6;
+  }
+  .steps-list li::before{
+    content:counter(step); position:absolute; left:0; top:0;
+    width:28px; height:28px; border-radius:50%; background:var(--navy); color:#fff;
+    font-family:'Montserrat'; font-weight:700; font-size:13px; display:flex; align-items:center; justify-content:center;
+  }
+  .steps-list li strong{ color:var(--navy); display:block; font-size:16px; margin-bottom:2px; }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a class="wordmark" href="index.html">
+      ASPIRE RESEARCH &amp; CONSULTING
+      <small>Research. Funding. Impact.</small>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primaryNav">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <nav class="links" id="primaryNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="our-work.html">Our Work</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Contact</p>
+      <h1>Let's discuss your research, funding, or documentation need.</h1>
+      <p>Whether you have a specific grant deadline or just want to understand where Aspire could help, reach out and we'll follow up within two business days.</p>
+    </div>
+  </section>
+
+  <section class="bordered">
+    <div class="wrap contact-grid">
+      <div>
+        <p class="section-label">What Happens Next</p>
+        <h2 class="section-title">A simple, three-step start</h2>
+        <ol class="steps-list">
+          <li><strong>Send an inquiry</strong>Email us a short description of your organization and project — or just say hello and we'll ask the right questions.</li>
+          <li><strong>Discovery &amp; proposal</strong>We'll confirm scope, timeline, and investment, and send a written Client Proposal and Service Agreement.</li>
+          <li><strong>Kickoff</strong>Once the deposit and signed agreement are in, we begin — with regular check-ins through delivery.</li>
+        </ol>
+      </div>
+
+      <div class="contact-card">
+        <p class="label">Email</p>
+        <p class="value"><a href="mailto:contact@aspireresearchconsulting.com">contact@aspireresearchconsulting.com</a></p>
+        <p class="label">Response Time</p>
+        <p class="value">Within 2 business days</p>
+        <p class="label">Best For</p>
+        <p class="value" style="font-weight:400; font-size:15px; color:var(--mid);">Nonprofits, NGOs, research organizations, and mission-driven organizations seeking research, grant development, or technical documentation support.</p>
+        <a class="btn btn-primary" style="width:100%; margin-top:6px;" href="mailto:contact@aspireresearchconsulting.com?subject=Project%20Inquiry%20-%20Aspire%20Research%20%26%20Consulting">Email Aspire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="on-cream cta" style="border-top:none;">
+    <div class="wrap cta-inner">
+      <div>
+        <h2>Want to review materials first?</h2>
+        <p>Take a look at our services and pricing, or read the capability statement before reaching out.</p>
+      </div>
+      <div class="cta-actions">
+        <a class="btn btn-outline" href="services.html">Service Catalog</a>
+        <a class="btn btn-outline" href="assets/docs/Aspire_Capability_Statement.docx">Capability Statement</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">ASPIRE RESEARCH &amp; CONSULTING</div>
+        <div class="footer-tag">Research. Funding. Impact.</div>
+      </div>
+      <nav class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="our-work.html">Our Work</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <p class="footer-note">Aspire Research &amp; Consulting provides research, grant development, and technical documentation services to nonprofits, NGOs, research organizations, and mission-driven organizations.</p>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const nav = document.getElementById('primaryNav');
+  toggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    nav.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }));
+</script>
+
+</body>
+</html>

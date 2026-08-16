@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Work — Aspire Research &amp; Consulting</title>
+<meta name="description" content="Selected examples of Aspire's approach to research, funding development, and technical documentation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+<style>
+  /* ---------- Portfolio grid ---------- */
+  .work-section{ padding:64px 0 88px; }
+  .cards{ display:flex; flex-wrap:wrap; justify-content:center; gap:28px; margin-top:8px; }
+  .card{
+    background:var(--white); border:1px solid var(--hairline); border-top:4px solid var(--navy);
+    width:320px; max-width:100%; padding:0 0 26px;
+    display:flex; flex-direction:column;
+    transition:transform .18s ease, box-shadow .18s ease, border-top-color .18s ease;
+    text-decoration:none;
+  }
+  .card:hover{ transform:translateY(-4px); box-shadow:0 14px 30px -14px rgba(27,42,65,.35); border-top-color:var(--gold); }
+  .card-tab{
+    display:inline-block; background:var(--cream); color:var(--green);
+    font-family:'Montserrat'; font-weight:700; font-size:11px; letter-spacing:1.4px; text-transform:uppercase;
+    padding:7px 16px; margin:22px 24px 18px; border-left:3px solid var(--gold); align-self:flex-start;
+  }
+  .card h3{ font-size:20px; line-height:1.32; color:var(--navy); margin:0 24px 12px; font-weight:700; }
+  .card p{ font-size:14.5px; line-height:1.6; color:var(--mid); margin:0 24px 22px; flex:1; }
+  .card .view-link{
+    margin:0 24px; font-family:'Montserrat'; font-weight:600; font-size:13px; letter-spacing:.4px;
+    color:var(--navy); text-decoration:none; display:inline-flex; align-items:center; gap:7px;
+  }
+  .card .view-link .arrow{ transition:transform .18s ease; color:var(--gold); font-size:15px; }
+  .card:hover .view-link .arrow{ transform:translateX(4px); }
+
+  /* ---------- Service Catalog callout ---------- */
+  .catalog-band{ background:var(--navy); border-top:1px solid rgba(255,255,255,.08); border-bottom:3px solid var(--gold); }
+  .catalog-inner{ display:flex; align-items:center; justify-content:space-between; gap:40px; flex-wrap:wrap; padding:56px 0; }
+  .catalog-copy{ max-width:560px; }
+  .catalog-copy .eyebrow{ color:var(--gold-light); }
+  .catalog-copy h2{ color:var(--white); font-size:clamp(24px,3.4vw,32px); margin:0 0 14px; font-weight:800; line-height:1.18; }
+  .catalog-copy p{ color:#B7C0CC; font-size:15.5px; line-height:1.65; margin:0; }
+  .catalog-actions{ display:flex; flex-direction:column; gap:14px; min-width:230px; }
+  .catalog-price-tag{
+    font-family:'Montserrat'; font-weight:700; font-size:12.5px; letter-spacing:1px; color:var(--navy-deep);
+    background:var(--gold-light); padding:8px 14px; align-self:flex-start;
+  }
+
+  /* ---------- Process ---------- */
+  .process{ background:var(--cream); padding:80px 0; border-bottom:1px solid var(--hairline); }
+  .process .eyebrow{ color:var(--gold); }
+  .process h2{ font-size:clamp(28px,4vw,38px); margin:0 0 12px; font-weight:800; color:var(--navy); }
+  .process > .wrap > p{ color:var(--mid); max-width:560px; font-size:16px; line-height:1.6; margin:0 0 52px; }
+  .steps{ display:flex; gap:0; position:relative; flex-wrap:wrap; row-gap:44px; }
+  .step{ flex:1 1 150px; min-width:140px; position:relative; padding-right:18px; }
+  .step:not(:last-child)::after{
+    content:""; position:absolute; top:22px; right:-2px; width:calc(100% - 40px);
+    border-top:2px dashed rgba(185,143,69,.55); display:none;
+  }
+  @media (min-width:1000px){ .step:not(:last-child)::after{ display:block; } }
+  .step-num{
+    font-family:'Montserrat'; font-weight:800; font-size:15px; width:44px; height:44px; border-radius:50%;
+    background:var(--navy); color:var(--white); display:flex; align-items:center; justify-content:center;
+    margin-bottom:16px; position:relative; z-index:2; border:2px solid var(--gold);
+  }
+  .step h3{ font-size:16.5px; margin:0 0 8px; font-weight:700; letter-spacing:.2px; color:var(--navy); }
+  .step p{ font-size:13.5px; line-height:1.55; color:var(--mid); margin:0; max-width:200px; }
+
+  @media (max-width:600px){ .catalog-inner{ flex-direction:column; align-items:flex-start; padding:44px 0; } }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a class="wordmark" href="index.html">
+      ASPIRE RESEARCH &amp; CONSULTING
+      <small>Research. Funding. Impact.</small>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primaryNav">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <nav class="links" id="primaryNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="our-work.html" class="active">Our Work</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Our Work</p>
+      <h1>Selected examples of research, funding, and documentation done well.</h1>
+      <p>Explore selected examples demonstrating Aspire's approach to research, funding development, and technical documentation &mdash; from initial grant proposal through evaluation and public communication.</p>
+    </div>
+  </section>
+
+  <section class="work-section">
+    <div class="wrap">
+      <div class="cards">
+
+        <a class="card" href="assets/docs/Aspire_Portfolio_Sample_01_Grant_Proposal.docx">
+          <span class="card-tab">Grant Development</span>
+          <h3>Community Mental Health Access Initiative</h3>
+          <p>A complete illustrative grant proposal &mdash; from statement of need through SMART objectives, evaluation plan, and budget narrative.</p>
+          <span class="view-link">View Sample <span class="arrow">&rarr;</span></span>
+        </a>
+
+        <a class="card" href="assets/docs/Aspire_Portfolio_Sample_02_Funder_Research_Report.docx">
+          <span class="card-tab">Funder Research</span>
+          <h3>Nonprofit Funding Landscape Analysis</h3>
+          <p>A prioritized funder landscape report, scoring opportunities by fit and translating research into a phased funding strategy.</p>
+          <span class="view-link">View Sample <span class="arrow">&rarr;</span></span>
+        </a>
+
+        <a class="card" href="assets/docs/Aspire_Portfolio_Sample_03_Research_Report.docx">
+          <span class="card-tab">Research</span>
+          <h3>Barriers to Mental Health Service Access</h3>
+          <p>An evidence synthesis examining the cost, stigma, and navigation barriers underserved adults face in accessing care.</p>
+          <span class="view-link">View Sample <span class="arrow">&rarr;</span></span>
+        </a>
+
+        <a class="card" href="assets/docs/Aspire_Portfolio_Sample_04_Technical_Report.docx">
+          <span class="card-tab">Technical Documentation</span>
+          <h3>Community Health Program Implementation Report</h3>
+          <p>A year-end program report turning outreach and referral data into clear, funder- and board-ready documentation.</p>
+          <span class="view-link">View Sample <span class="arrow">&rarr;</span></span>
+        </a>
+
+        <a class="card" href="assets/docs/Aspire_Portfolio_Sample_05_Policy_Evidence_Brief.docx">
+          <span class="card-tab">Policy &amp; Evidence</span>
+          <h3>Strengthening Community-Based Mental Health Access</h3>
+          <p>A concise policy brief distilling research into a key message, supporting evidence, and four concrete recommendations.</p>
+          <span class="view-link">View Sample <span class="arrow">&rarr;</span></span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="catalog-band" id="catalog">
+    <div class="wrap catalog-inner">
+      <div class="catalog-copy">
+        <p class="eyebrow">Services &amp; Pricing</p>
+        <h2>See the full Service Catalog &mdash; packages, pricing, and timelines.</h2>
+        <p>Grant development, research, technical documentation, and our integrated Research &amp; Funding Development offer &mdash; each broken into Essential, Professional, and Strategic packages, with clear pricing and delivery timelines.</p>
+      </div>
+      <div class="catalog-actions">
+        <span class="catalog-price-tag">Services from $150</span>
+        <a class="btn btn-gold" href="services.html">View Service Catalog</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="process" id="process">
+    <div class="wrap">
+      <p class="eyebrow">Our Process</p>
+      <h2>How Aspire works</h2>
+      <p>Every deliverable, regardless of format, moves through the same six-stage process.</p>
+
+      <div class="steps">
+        <div class="step"><div class="step-num">01</div><h3>Understand</h3><p>We understand the organization's goals and requirements.</p></div>
+        <div class="step"><div class="step-num">02</div><h3>Research</h3><p>We identify relevant evidence, information, and opportunities.</p></div>
+        <div class="step"><div class="step-num">03</div><h3>Analyze</h3><p>We assess the information against the client's objectives.</p></div>
+        <div class="step"><div class="step-num">04</div><h3>Develop</h3><p>We produce the required professional deliverable.</p></div>
+        <div class="step"><div class="step-num">05</div><h3>Refine</h3><p>We review and improve the document.</p></div>
+        <div class="step"><div class="step-num">06</div><h3>Deliver</h3><p>The organization receives a professional final product.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="contact">
+    <div class="wrap cta-inner">
+      <div>
+        <h2>Want to see how this could work for your organization?</h2>
+        <p>Review our service catalog and capability statement, or get in touch to discuss a grant proposal, funder research, research report, or program documentation project.</p>
+      </div>
+      <div class="cta-actions">
+        <a class="btn btn-primary" href="contact.html">Contact Aspire</a>
+        <a class="btn btn-outline" href="assets/docs/Aspire_Capability_Statement.docx">Capability Statement</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">ASPIRE RESEARCH &amp; CONSULTING</div>
+        <div class="footer-tag">Research. Funding. Impact.</div>
+      </div>
+      <nav class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="our-work.html">Our Work</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <p class="footer-note">The five samples above are illustrative portfolio pieces created to demonstrate Aspire's approach to grant development, funder research, research reporting, technical documentation, and policy communication. Each sample includes a full disclosure of its illustrative nature. Real client work is available for reference upon request.</p>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const nav = document.getElementById('primaryNav');
+  toggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    nav.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }));
+</script>
+
+</body>
+</html>
